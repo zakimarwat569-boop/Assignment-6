@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+</head>
+<body>
+  <main>
+    <h1>Job Application Form</h1>
+    <p>Tell us about yourself and the position you are interested in.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <p>
+          <label for="full-name">Full Name <span aria-hidden="true">*</span></label><br>
+          <input type="text" id="full-name" name="full-name" autocomplete="name"
+                 placeholder="Your full name" required>
+        </p>
+
+        <p>
+          <label for="email">Email Address <span aria-hidden="true">*</span></label><br>
+          <input type="email" id="email" name="email" autocomplete="email"
+                 placeholder="you@example.com" required>
+        </p>
+
+        <p>
+          <label for="phone">Phone Number <span aria-hidden="true">*</span></label><br>
+          <input type="tel" id="phone" name="phone" autocomplete="tel"
+                 placeholder="Your phone number" required>
+        </p>
+
+        <p>
+          <label for="website">Website or Portfolio</label><br>
+          <input type="url" id="website" name="website"
+                 placeholder="https://example.com">
+        </p>
+
+        <p>
+          <label for="date-of-birth">Date of Birth <span aria-hidden="true">*</span></label><br>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Details</legend>
+
+        <p>
+          <label for="position">Job Position <span aria-hidden="true">*</span></label><br>
+          <select id="position" name="position" required>
+            <option value="" selected disabled>Select a position</option>
+            <option value="frontend-developer">Frontend Developer</option>
+            <option value="backend-developer">Backend Developer</option>
+            <option value="ui-ux-designer">UI/UX Designer</option>
+            <option value="qa-engineer">QA Engineer</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Preferred Work Location <span aria-hidden="true">*</span></legend>
+          <p>
+            <input type="radio" id="location-onsite" name="work-location"
+                   value="on-site" required>
+            <label for="location-onsite">On-site</label>
+          </p>
+          <p>
+            <input type="radio" id="location-remote" name="work-location"
+                   value="remote">
+            <label for="location-remote">Remote</label>
+          </p>
+          <p>
+            <input type="radio" id="location-hybrid" name="work-location"
+                   value="hybrid">
+            <label for="location-hybrid">Hybrid</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skills</legend>
+          <p>
+            <input type="checkbox" id="skill-html" name="skills" value="html">
+            <label for="skill-html">HTML</label>
+          </p>
+          <p>
+            <input type="checkbox" id="skill-css" name="skills" value="css">
+            <label for="skill-css">CSS</label>
+          </p>
+          <p>
+            <input type="checkbox" id="skill-javascript" name="skills" value="javascript">
+            <label for="skill-javascript">JavaScript</label>
+          </p>
+          <p>
+            <input type="checkbox" id="skill-react" name="skills" value="react">
+            <label for="skill-react">React</label>
+          </p>
+          <p>
+            <input type="checkbox" id="skill-nodejs" name="skills" value="nodejs">
+            <label for="skill-nodejs">Node.js</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="resume">Resume Upload <span aria-hidden="true">*</span></label><br>
+          <input type="file" id="resume" name="resume"
+                 accept=".pdf,.doc,.docx" required>
+        </p>
+
+        <p>
+          <label for="about">Write About Yourself <span aria-hidden="true">*</span></label><br>
+          <textarea id="about" name="about" rows="6" cols="40"
+                    placeholder="Share your experience and what makes you a good fit."
+                    required></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extra Information</legend>
+
+        <p>
+          <label for="tech-stack">Search your favorite tech stack</label><br>
+          <input type="search" id="tech-stack" name="tech-stack"
+                 placeholder="e.g. React and Node.js">
+        </p>
+
+        <p>
+          <label for="password">Password <span aria-hidden="true">*</span></label><br>
+          <input type="password" id="password" name="password" autocomplete="new-password"
+                 placeholder="At least 8 characters" minlength="8" required>
+        </p>
+
+        <p>
+          <label for="confirm-password">Confirm Password <span aria-hidden="true">*</span></label><br>
+          <input type="password" id="confirm-password" name="confirm-password"
+                 autocomplete="new-password" placeholder="Re-enter your password"
+                 minlength="8" required>
+        </p>
+      </fieldset>
+
+      <p><button type="submit">Submit Application</button></p>
+    </form>
+  </main>
+</body>
+</html>
